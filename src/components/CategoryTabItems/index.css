@@ -1,0 +1,48 @@
+.tab-item {
+  flex: 0 0 auto; /* Prevent shrinking */
+  padding: 10px 20px;
+  margin-right: 15px; /* Space between tabs */
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  background-color: #f9f9f9; /* Light background for tabs */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  white-space: nowrap; /* Prevent text wrapping */
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  border: none;
+}
+
+/* Tab Hover Effect */
+.tab-item:hover {
+  background-color: white;
+  color: #ff5a5a;
+}
+
+/* Active Tab Styling (Optional) */
+.tab-item.active {
+  background-color: white;
+  color: #ff5a5a;
+  border: none;
+  border-bottom: 2px solid #ff5a5a;
+}
+
+.dishes-container {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .tab-item {
+    flex: 1; /* Evenly distribute tabs */
+    margin: 0 10px; /* Adjust spacing for large screens */
+    text-align: center;
+  }
+}
