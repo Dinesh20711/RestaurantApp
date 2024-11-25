@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.restaurent-name-heading {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.cart-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.cart-icon {
+  font-size: 24px;
+  color: #ff5722;
+}
+
+.badge {
+  background-color: #ff5722;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 14px;
+}
+
+/* Tab Styles */
+.tab-container {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fff;
+  padding: 10px 20px;
+  margin: 0;
+  list-style: none;
+  border-bottom: 2px solid #e0e0e0;
+  overflow-x: auto;
+}
+
+.tab-item {
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.tab-button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 10px 10px 10px;
+  font-size: 12px;
+  font-family: 'Roboto';
+ 
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  transition:
+    color 0.3s,
+    border-bottom 0.3s;
+    
+}
+
+.tab-button:hover,
+.active-tab .tab-button {
+  color: #ff5722;
+  border-bottom: 2px solid #ff5722;
+}
+
+/* Dish Card Styles */
+.dish-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  margin: 10px 0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.dish-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.category-cont,
+.category-cont-green {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  background-color: #ff5722;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.circle-green {
+  width: 12px;
+  height: 12px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.dish-items {
+  flex: 1;
+}
+
+.dish-items h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.dish-items p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.dish-items p:nth-of-type(1) {
+  color: #333;
+  font-weight: bold;
+}
+
+.add-on-con {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.customizations {
+  color: #4caf50;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.dish-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.dish-card p:last-of-type {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff9800;
+  margin: 0;
+}

@@ -1,6 +1,6 @@
 .bg-container {
   background-color: white;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .nav-container {
@@ -59,9 +59,40 @@
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
 }
 
+.orders-list {
+  display: none;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .tab-container {
     justify-content: center; /* Center align tabs on large screens */
     overflow-x: hidden; /* Remove horizontal scroll on larger screens */
   }
+  .orders-list {
+    display: block;
+  }
+
+  .loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .cart-container {
+  position: relative;
+ 
+  width: fit-content;
+  cursor: pointer;
+  display: flex;
+  
+}
 }
