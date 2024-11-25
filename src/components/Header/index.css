@@ -64,15 +64,12 @@ body {
   padding: 10px 10px 10px 10px;
   font-size: 12px;
   font-family: 'Roboto';
- 
+
   color: #333;
   cursor: pointer;
   font-weight: bold;
   outline: none;
-  transition:
-    color 0.3s,
-    border-bottom 0.3s;
-    
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
 .tab-button:hover,

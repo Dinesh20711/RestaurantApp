@@ -88,11 +88,10 @@
     width: 100%;
   }
   .cart-container {
-  position: relative;
- 
-  width: fit-content;
-  cursor: pointer;
-  display: flex;
-  
-}
+    position: relative;
+
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+  }
 }
