@@ -1,0 +1,69 @@
+.login-bg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+}
+
+.login-heading {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 28px;
+  color: #1f1f1f;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.login-form label {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  color: #808080;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  min-width: 320px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  color: #141414;
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.login-button {
+  padding: 8px 16px;
+  border: none;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(76, 118, 253);
+}
+
+.login-button:hover {
+  background-color: rgb(34, 86, 255);
+}
+
+input {
+  outline: none;
+}
+
+.text-danger{
+  color: rgb(245, 54, 54);
+}

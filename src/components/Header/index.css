@@ -1,167 +1,100 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Navbar Styles */
-.nav-container {
+.nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f8f8f8;
-  padding: 10px 20px;
-  border-bottom: 2px solid #e0e0e0;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 10px 10px -15px #111;
 }
 
-.restaurent-name-heading {
-  font-size: 24px;
-  color: #333;
-  margin: 0;
+.logo-heading {
+  font-family: 'Roboto';
+  font-size: 25px;
+  margin: 0px;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
-.cart-container {
+.order-cart-div {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 18px;
+}
+
+.my-orders-text {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .cart-icon {
-  font-size: 24px;
-  color: #ff5722;
-}
-
-.badge {
-  background-color: #ff5722;
-  color: white;
-  border-radius: 50%;
-  padding: 2px 8px;
-  font-size: 14px;
-}
-
-/* Tab Styles */
-.tab-container {
-  display: flex;
-  justify-content: flex-start;
-  background-color: #fff;
-  padding: 10px 20px;
-  margin: 0;
-  list-style: none;
-  border-bottom: 2px solid #e0e0e0;
-  overflow-x: auto;
-}
-
-.tab-item {
-  margin-right: 16px;
+  height: 32px;
+  width: 32px;
   cursor: pointer;
 }
 
-.tab-button {
+.cart-count-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cart-count {
+  text-align: center;
+  background-color: #ff6347;
+  padding: 4px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 15px;
+  min-width: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: 77px;
+  @media screen and (min-width: 768px) {
+    right: 122px;
+  }
+}
+.logout-icon {
+  font-size: 27px;
+  margin-left: 20px;
+}
+.cart-button {
   background-color: transparent;
   border: none;
-  padding: 10px 10px 10px 10px;
-  font-size: 12px;
-  font-family: 'Roboto';
-
-  color: #333;
-  cursor: pointer;
-  font-weight: bold;
   outline: none;
-  transition: color 0.3s, border-bottom 0.3s;
+  cursor: pointer;
 }
-
-.tab-button:hover,
-.active-tab .tab-button {
-  color: #ff5722;
-  border-bottom: 2px solid #ff5722;
+.display-sm-button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
-
-/* Dish Card Styles */
-.dish-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border: 1px solid #e0e0e0;
-  margin: 10px 0;
-  border-radius: 8px;
-  background-color: #fff;
+.display-lg-button {
+  background-color: rgb(50, 97, 248);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Roboto;
+  width: 90px;
+  height: 30px;
+  margin-left: 20px;
+  border-radius: 5px;
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
 }
-
-.dish-details {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-.category-cont,
-.category-cont-green {
-  display: flex;
-  align-items: center;
-}
-
-.circle {
-  width: 12px;
-  height: 12px;
-  background-color: #ff5722;
-  border-radius: 50%;
-  margin-right: 8px;
-}
-
-.circle-green {
-  width: 12px;
-  height: 12px;
-  background-color: #4caf50;
-  border-radius: 50%;
-  margin-right: 8px;
-}
-
-.dish-items {
-  flex: 1;
-}
-
-.dish-items h1 {
-  font-size: 18px;
-  margin: 0;
-  color: #333;
-}
-
-.dish-items p {
-  margin: 4px 0;
-  font-size: 14px;
-  color: #666;
-}
-
-.dish-items p:nth-of-type(1) {
-  color: #333;
-  font-weight: bold;
-}
-
-.add-on-con {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 10px;
-}
-
-.customizations {
-  color: #4caf50;
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-.dish-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.dish-card p:last-of-type {
-  font-size: 14px;
-  font-weight: bold;
-  color: #ff9800;
-  margin: 0;
+.link-element {
+  text-decoration: none;
+  color: #000000;
 }

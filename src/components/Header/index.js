@@ -1,21 +1,53 @@
 import './index.css'
+import {Link, withRouter} from 'react-router-dom'
+import Cookies from 'js-cookie'
+import {useContext} from 'react'
+import {AiOutlineShoppingCart} from 'react-icons/ai'
+import {FiLogOut} from 'react-icons/fi'
+
+import CartContext from '../../context/CartContext'
 
 const Header = props => {
-  const {tabName, menuCategoryId, isActive, handleTabClick} = props
+  const {cartList} = useContext(CartContext)
 
-  const onTabClick = () => {
-    handleTabClick(menuCategoryId)
+  const onClickLogoutButton = () => {
+    const {history} = props
+    Cookies.remove('jwt_token')
+    history.replace('/login')
   }
 
-  const tabClassName = isActive ? 'tab-item active-tab' : 'tab-item'
-
   return (
-    <li className={tabClassName}>
-      <button type="button" className="tab-button" onClick={onTabClick}>
-        {tabName}
-      </button>
-    </li>
+    <div className="nav-header">
+      <Link to="/" className="link-element">
+        <h1 className="logo-heading">UNI Resto Cafe</h1>
+      </Link>
+      <div className="order-cart-div">
+        <p className="my-orders-text">My Orders</p>
+        <div className="cart-count-badge">
+          <Link to="/cart">
+            <button className="cart-button" type="button" data-testid="cart">
+              <AiOutlineShoppingCart className="cart-icon" />
+            </button>
+          </Link>
+          <p className="cart-count">{cartList.length}</p>
+        </div>
+        <button
+          className="cart-button display-sm-button"
+          onClick={onClickLogoutButton}
+          type="button"
+        >
+          <FiLogOut className="logout-icon" />
+        </button>
+        <button
+          className="display-lg-button"
+          type="button"
+          onClick={onClickLogoutButton}
+        >
+          Logout
+        </button>
+      </div>
+    </div>
   )
 }
 
-export default Header
+export default withRouter(Header)

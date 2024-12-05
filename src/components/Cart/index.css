@@ -1,0 +1,57 @@
+.cart-page-container {
+  min-height: 100vh;
+}
+
+.cart-body-container {
+  flex: 1;
+}
+
+.empty-view-image {
+  width: 250px;
+  margin-bottom: 25px;
+}
+
+.empty-description {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+.cart-items-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.cart-items-header h1 {
+  font-size: 25px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.remove-all-btn {
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #3b71ca;
+  cursor: pointer;
+}
+.empty-cart-view-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  font-family: Roboto;
+}
+.cart-list-items {
+  padding-left: 5%;
+  padding-right: 5%;
+}
